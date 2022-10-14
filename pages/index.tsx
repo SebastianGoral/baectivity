@@ -24,8 +24,7 @@ const Scene = styled.div`
   background: rgb(213, 104, 0);
 
   span:last-child {
-    font-family: "Caveat", cursive;
-    font-family: "Mali", cursive;
+    font-family: "Alfa Slab One", cursive;
     margin: 0 auto 200px;
     color: rgb(101, 48, 4);
     font-size: 40px;

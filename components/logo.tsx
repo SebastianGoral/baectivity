@@ -2,8 +2,7 @@ import React from "react";
 import styled from "@emotion/styled";
 
 const Wrapper = styled.span`
-  font-family: "Caveat", cursive;
-  font-family: "Mali", cursive;
+  font-family: "Alfa Slab One", cursive;
   margin: 0 auto;
   font-size: 50px;
 
