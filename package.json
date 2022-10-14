@@ -9,14 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "emotion": "^11.0.0",
     "next": "^12.3.1",
+    "prettier": "^2.7.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "thin-backend": "^0.11.0",
+    "thin-backend-react": "^0.10.1"
   },
   "devDependencies": {
     "@types/node": "18.8.5",
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",
+    "@types/thin-backend": "https://thin.dev/types/8da861e2-6434-4e60-a30a-0ebe6db71c14/APRCJYyOHHzrsLTtPqqLLnxtqoEbYDah",
     "eslint": "8.25.0",
     "eslint-config-next": "12.3.1",
     "typescript": "4.8.4"
