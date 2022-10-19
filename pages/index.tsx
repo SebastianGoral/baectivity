@@ -2,6 +2,8 @@ import type { NextPage } from "next";
 import LogoIcon from "../styles/LogoIcon.png";
 import styled from "@emotion/styled";
 import { Logo } from "../components/logo";
+import { Button } from "@mui/material";
+import { useRouter } from "next/router";
 const Wrapper = styled.div`
   display: flex;
   padding-top: 100px;
@@ -13,57 +15,35 @@ const Wrapper = styled.div`
   }
 `;
 
-const Scene = styled.div`
-  width: 100%;
-  height: 100vh;
+const ButtonsWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  font-family: Montserrat, "Noto Sans Arabic", "Helvetica Neue", Helvetica,
-    Arial, sans-serif;
-  background: rgb(213, 104, 0);
-
-  span:last-child {
-    font-family: "Alfa Slab One", cursive;
-    margin: 0 auto 200px;
-    color: rgb(101, 48, 4);
-    font-size: 40px;
+  margin: auto;
+  width: 80%;
+  * {
+    margin-top: 50px !important;
   }
 `;
-
-const Element = styled.div`
-  position: fixed;
-  background-color: rgb(0, 0, 0);
-  transform: rotate(45deg);
-  opacity: 0.1;
-  top: -15vmin;
-  left: -15vmin;
-  min-width: 75vmin;
-  min-height: 75vmin;
-`;
-
-const Circle = styled.div`
-  position: fixed;
-  border-radius: 50%;
-  background-color: rgb(0, 0, 0);
-  opacity: 0.1;
-  min-width: 75vmin;
-  min-height: 75vmin;
-  bottom: -15vmin;
-  right: -15vmin;
-`;
-
 const Home: NextPage = () => {
+  const router = useRouter();
   return (
-    <Scene>
-      <Element />
-      <Circle />
+    <>
       <Wrapper>
         <img src={LogoIcon.src} />
         <Logo />
       </Wrapper>
-      <span>COMING SOON</span>
-    </Scene>
+      <ButtonsWrapper>
+        <Button
+          onClick={() => router.push("/random-activity")}
+          variant={"contained"}
+        >
+          Random activity
+        </Button>
+        <Button disabled variant={"contained"}>
+          Dashboard
+        </Button>
+      </ButtonsWrapper>
+    </>
   );
 };
 
