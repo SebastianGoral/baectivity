@@ -4,6 +4,7 @@ import styled from "@emotion/styled";
 import { Logo } from "../components/logo";
 import { Button } from "@mui/material";
 import { useRouter } from "next/router";
+
 const Wrapper = styled.div`
   display: flex;
   padding-top: 100px;
@@ -39,7 +40,7 @@ const Home: NextPage = () => {
         >
           Random activity
         </Button>
-        <Button disabled variant={"contained"}>
+        <Button onClick={() => router.push("/dashboard")} variant={"contained"}>
           Dashboard
         </Button>
       </ButtonsWrapper>

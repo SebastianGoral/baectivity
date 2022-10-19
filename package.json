@@ -19,6 +19,7 @@
     "prettier": "^2.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "recharts": "^2.1.15",
     "thin-backend": "^0.11.0",
     "thin-backend-react": "^0.10.1"
   },
@@ -26,7 +27,7 @@
     "@types/node": "18.8.5",
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",
-    "@types/thin-backend": "https://thin.dev/types/47421738-459a-4884-98b4-feb02fb1d918/UjIBZyLJNmsytxTlkIpErlGEcdKtHcNP",
+    "@types/thin-backend": "https://thin.dev/types/68106e05-a3e8-4403-98a3-57f10e9503db/HPGPCERFzyslrNKwVrIbmgCqCPKWzHBs",
     "eslint": "8.22.0",
     "eslint-config-next": "12.3.1",
     "typescript": "4.8.4"

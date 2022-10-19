@@ -17,13 +17,6 @@ const Scene = styled.div`
   font-family: Montserrat, "Noto Sans Arabic", "Helvetica Neue", Helvetica,
     Arial, sans-serif;
   background: rgb(213, 104, 0);
-
-  span:last-child {
-    font-family: "Alfa Slab One", cursive;
-    margin: 0 auto 200px;
-    color: rgb(101, 48, 4);
-    font-size: 40px;
-  }
 `;
 
 const Element = styled.div`
